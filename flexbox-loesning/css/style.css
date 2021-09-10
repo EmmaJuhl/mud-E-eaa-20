@@ -1,0 +1,56 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Reenie+Beanie&display=swap');
+/* font-family: 'Reenie Beanie', cursive; */
+
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --lightOrange: #fc720f;
+  --DarkOrange: #c9490e;
+  --green: #166036;
+  --black: #020202;
+
+  /* fonte */
+  --font: 'Reenie Beanie', cursive; /* brødtekst */
+  --displayH: 'Creepster', cursive; /* overskrifter */
+
+  /* teksturer ("fliselagte baggrunde") */
+}
+
+/* Her bruges en variabel: --blue */
+body {
+
+  font-family: var(--font);
+  background-image: url("/images/baggrund2-rigtig.png");
+}
+
+/* Typografi */
+h1, h2 {
+  font-family: var(--displayH);
+  color: var(--DarkOrange)
+}
+
+
+/* Layout: Flexbox */
+/* tutorial: https://css-tricks.com/snippets/css/a-guide-to-flexbox */
+
+#content {
+  display: flex; /* får indholdet i containeren til at flexe */
+  justify-content: space-evenly; /* se andre muligheder i tutorialen */
+}
+
+aside {
+  width: 33%; /* giv elementerne en bredde */
+}
+
+main {
+  width: 65%; /* do. */
+}
+
+/* align items */
+/* align content */
