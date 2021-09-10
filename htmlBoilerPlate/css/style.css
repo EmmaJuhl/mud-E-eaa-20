@@ -1,0 +1,96 @@
+/**
+ * fil: css/style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #F0F8FF;
+  --white: #F0FFFF;
+  /* fonte */
+
+/** navigationsfarve*/
+--navfarve:#5b7c7c;
+}
+
+/*google fonts, hvordan man importere*/
+@import url('https://fonts.google.com/specimen/Lobster+Two?standard-styles=#standard-styles');
+/*bruges sådan*/
+/* Her bruges en variabel: --blue */
+/*Dette er hvordan man laver skrifttyper om og skifter farver*/
+body {
+  background-color: var(--blue);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h3, h4, h5, h6 {
+  font-family: Lobster Two, cursive;
+color: black;
+}
+/* Layout */
+
+/* Typografi */
+h2 {
+  border-bottom: 2px solid var(--blue);
+  background-color: var(--navfarve);
+  background-color: var(--navfarve);
+  padding: 23px;
+}
+
+
+nav {
+    background-color: var(--navfarve);
+}
+/*links*/
+a{
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: blue;
+}
+
+nav ul{
+  list-style-type: none; /*fjerner bulletslink ved lister*/
+}
+
+nav ul li {
+  display: inline; /*nu bliver menuen vandret*/
+}
+p {
+  width: 400px;
+}
+p {
+  margin-top: 70px;
+}
+
+/*wrapperen går rundt om alt i dette ex*/
+#wrap {
+  width: 600px;
+  margin: auto;
+}
+
+
+/*gallari bliver stylet her*/
+figure{
+  height: 450px;
+  width: 450px;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+.figure {
+  float: right;
+}
+
+img {
+  max-width: 25%
+  float: left;
+  border: 1px solid black;
+}
+
+div {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn130.picsart.com%2F287373281014201.gif%3Fto%3Dmin%26r%3D1024&f=1&nofb=1")
+}
